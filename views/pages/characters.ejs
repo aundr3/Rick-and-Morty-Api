@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+<section class="section section-character container">
+    <% data.forEach(item=> { %>
+        <div class="item-div">
+            <div class="">
+                <figure class="figure character-figure justify-content-around">
+                        <img src="<%= item.image %>" alt="<%= item.title %>" class="img-fluid item-pic">
+                </figure>
+                <p class="item-text">Name: <%= item.name %></p>
+                <p class="item-text">Species: <%= item.species %></p>
+                <p class="item-text">Gender: <%= item.gender %></p>
+                <p class="item-text">Origin: <%= item.origin %></p>
+            </div>
+        </div>
+        <% }) %>
+
+<%- include('../partials/footer') %>
